@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page introuvable — Nothing. Corp</title>
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" aria-label="Nothing. Corp — Accueil">
+      <span class="logo-text">NOTHING. CORP</span>
+      <div class="logo-bar"></div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" data-nav-link="index.html">Accueil</a>
+      <a href="sites-web.html" data-nav-link="sites-web.html">Sites Web</a>
+      <a href="audiovisuel.html" data-nav-link="audiovisuel.html">Audiovisuel</a>
+      <a href="contact.html" data-nav-link="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a href="contact.html" class="btn-header-cta">Projet</a>
+      <button type="button" class="menu-toggle" data-menu-toggle aria-label="Ouvrir le menu">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" data-mobile-nav>
+    <nav>
+      <a href="index.html" data-nav-link="index.html">Accueil</a>
+      <a href="sites-web.html" data-nav-link="sites-web.html">Sites Web</a>
+      <a href="audiovisuel.html" data-nav-link="audiovisuel.html">Audiovisuel</a>
+      <a href="contact.html" data-nav-link="contact.html">Contact</a>
+      <a href="contact.html" class="mobile-cta">Démarrer un projet</a>
+    </nav>
+  </div>
+</header>
+
+<main class="notfound">
+  <div class="notfound-inner">
+    <h1>404</h1>
+    <h2>Page introuvable</h2>
+    <p>La page que vous cherchez n'existe pas ou a été déplacée.</p>
+    <a href="index.html" class="btn btn-primary">Retour à l'accueil</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="margin-top:0;border-top:none;padding-top:0;">
+      <span>© <span data-year></span> Nothing. Corp — Crafted in Belgium</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());</script>
+<script src="js/main.js"></script>
+</body>
+</html>
